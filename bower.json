@@ -1,0 +1,18 @@
+{
+  "name": "tail-simulator",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Ganesh Avhad"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ganyavhad/tail-simulator",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

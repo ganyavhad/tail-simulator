@@ -3,28 +3,14 @@ const app = express();
 const util = require('util')
 const fs = require('fs')
 const cp = require('child_process');
+const path = require('path')
 
+app.use(express.static(path.join(__dirname, ".")));
 
 // app.get("/", function (req, res) {
 //     res.send("done")
 // })
 
-// var getFileData = function () {
-//     fs.readFile('log/logger.log', function (err, data) {
-//         if (err) throw err;
-//         var array = data.toString().split("\n");
-//         var newAraay = [];
-//         console.log("array.length ", array.length)
-//         if (array.length > 10) {
-//             newAraay = array.splice(array.length - 10, array.length + 1)
-//         } else {
-//             newAraay = array;
-//         }
-//         newAraay.forEach(function (log) {
-//             console.log(log)
-//         })
-//     });
-// }
 
 // with tail command
 getFileData = function () {
