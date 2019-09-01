@@ -3,15 +3,7 @@
 </header>
 <div id="container">
     <div id="content">
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
-        <p>Hello world</p>
+        <span ng-if="!logAvailable">{{message}}</span>
+        <span ng-if="!logAvailable" ng-repeat="log in logs">{{log}}</span>
     </div>
 </div>
