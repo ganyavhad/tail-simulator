@@ -26,7 +26,7 @@ fs.watchFile('log/logger.log', (curr, prev) => {
 
 setInterval(function () {
     console.log(new Date());
-}, 2000)
+}, 10000)
 
 // socket initialized
 io.on("connection", function (socket) { })

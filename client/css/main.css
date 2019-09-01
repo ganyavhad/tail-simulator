@@ -2,7 +2,7 @@
   background-color: #000000;
   width: auto;
   height: auto;
-  min-height: 50%;
+  min-height: 80%;
   }
   
   #content {
@@ -10,3 +10,26 @@
     font-size: 16px;
     font-family: monospace;
   }
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  header {
+    padding: 10;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
