@@ -16,4 +16,23 @@ myApp
                 $scope.logAvailable = false;
             }
         })
+
+
+        var socket = io.connect('http://localhost:3000');
+        socket.on('logs_updating', function (data) {
+            $scope.$apply(function () {
+                if (data.data[0]) {
+                    console.log('if', data)
+
+                    $scope.logAvailable = true;
+                    $scope.logs = data.data;
+                }
+                else {
+                    console.log('else', data)
+                    $scope.logs = [];
+                    $scope.message = 'Logs not available';
+                    $scope.logAvailable = false;
+                }
+            });
+        });
     })

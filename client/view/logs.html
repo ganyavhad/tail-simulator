@@ -3,7 +3,7 @@
 </header>
 <div id="container">
     <div id="content">
-        <span ng-if="!logAvailable">{{message}}</span>
-        <span ng-if="!logAvailable" ng-repeat="log in logs">{{log}}</span>
+        <p ng-if="!logAvailable">{{message}}</p>
+        <p ng-if="logAvailable" ng-repeat="log in logs  track by $index">{{log}}</p>
     </div>
 </div>
