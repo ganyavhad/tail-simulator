@@ -1,18 +1,14 @@
 {
-  "name": "tail-simulator",
-  "description": "",
-  "main": "server.js",
-  "authors": [
-    "Ganesh Avhad"
-  ],
-  "license": "ISC",
-  "homepage": "https://github.com/ganyavhad/tail-simulator",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+	"name": "tail-simulator",
+	"description": "",
+	"main": "server.js",
+	"authors": ["Ganesh Avhad"],
+	"license": "ISC",
+	"homepage": "https://github.com/ganyavhad/tail-simulator",
+	"private": true,
+	"ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+	"dependencies": {
+		"angular": "^1.7.8",
+		"angular-ui-router": "^1.0.22"
+	}
 }
